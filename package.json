@@ -1,0 +1,16 @@
+{
+  "name": "birthday-website-lixie",
+  "version": "1.0.0",
+  "description": "Website ulang tahun romantis untuk Lixie 💙",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "birthday",
+    "romantic",
+    "website"
+  ],
+  "author": "Ryzen",
+  "license": "MIT"
+}

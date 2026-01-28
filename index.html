@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Lixie 💙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container opening-page" data-testid="opening-page">
+        <div class="content fade-in">
+            <div class="heart-icon">💙</div>
+            <h1 data-testid="opening-title">Hai Lixie...</h1>
+            <p class="subtitle">Ada sesuatu yang pengen aku kasih tau nih</p>
+            
+            <div class="countdown-container" data-testid="countdown-display">
+                <p class="countdown-label">Ulang tahunmu tinggal:</p>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-text">hari</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-text">jam</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-text">menit</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-text">detik</span>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-primary" data-testid="start-button" onclick="goToPage('pages/about.html')">
+                Mulai Yuk! 💙
+            </button>
+
+            <div class="music-control" data-testid="music-control">
+                <button id="musicToggle" class="music-btn" onclick="toggleMusic()">
+                    🔊
+                </button>
+                <span class="music-label">Musik</span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/countdown.js"></script>
+</body>
+</html>

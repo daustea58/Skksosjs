@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerita Kita 💙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container story-page" data-testid="story-page">
+        <div class="content fade-in">
+            <div class="page-header">
+                <h1 data-testid="story-title">Perjalanan Kita 💙</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item slide-right" data-testid="timeline-item-1">
+                    <div class="timeline-date">22 Desember 2024</div>
+                    <div class="timeline-card">
+                        <h3>💙 Hari Kita Jadian</h3>
+                        <p>Padahal pertama kali kita kenal di Facebook cuman sekedar nama ku aneh, tapi kita malah bisa jadian dan kamu inget kamu gamau di-HTS in dan kita beneran jadian!</p>
+                        <p>Walaupun awalnya banyak ujian dan cobaan, makasih kamu sudah mau sama ku. Kamu yang terbaik! 💙</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item slide-left" data-testid="timeline-item-2">
+                    <div class="timeline-date">6 Juni 2025</div>
+                    <div class="timeline-card">
+                        <h3>🏠 Pertama Kali Ketemu</h3>
+                        <p>Aku masih ingat pas aku kesana ke rumah mu, aku melihat kedua orang tua mu. Aku sangat grogi dan gugup banget!</p>
+                        <p>Tapi kenyataannya mamah dan papah mu itu baik dan welcome banget kepadaku. That means a lot buat aku! 🥰</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item slide-right" data-testid="timeline-item-3">
+                    <div class="timeline-date">Sekarang & Selamanya</div>
+                    <div class="timeline-card">
+                        <h3>💫 Perjalanan Berlanjut</h3>
+                        <p>Dan cerita kita masih terus berlanjut... Setiap hari bersama kamu adalah kenangan baru yang indah.</p>
+                        <p>Terima kasih udah jadi bagian paling berharga dalam hidup aku! 💙</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn-secondary" data-testid="back-button" onclick="goToPage('about.html')">
+                    ← Kembali
+                </button>
+                <button class="btn-primary" data-testid="next-button" onclick="goToPage('letter.html')">
+                    Lanjut →
+                </button>
+            </div>
+
+            <div class="music-control" data-testid="music-control">
+                <button id="musicToggle" class="music-btn" onclick="toggleMusic()">
+                    🔊
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="../assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

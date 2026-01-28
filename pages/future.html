@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impian Kita 💙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container future-page" data-testid="future-page">
+        <div class="content fade-in">
+            <div class="page-header">
+                <h1 data-testid="future-title">Impian Kita 💙</h1>
+                <p class="subtitle">Klik kartu impian di bawah untuk lihat pesan dukungan!</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="dreams-grid" data-testid="dreams-grid">
+                <div class="dream-card" data-testid="dream-card-1" onclick="showDreamMessage(1)">
+                    <div class="dream-icon">🏠</div>
+                    <h3>Punya Rumah Sendiri</h3>
+                    <p class="dream-message" id="message-1">
+                        Aku janji bakal kerja keras biar kita bisa punya rumah impian kita. Rumah yang hangat, penuh cinta, tempat kita bikin kenangan indah bareng! 💙
+                    </p>
+                </div>
+
+                <div class="dream-card" data-testid="dream-card-2" onclick="showDreamMessage(2)">
+                    <div class="dream-icon">✈️</div>
+                    <h3>Traveling Bareng</h3>
+                    <p class="dream-message" id="message-2">
+                        Someday kita bakal jalan-jalan ke banyak tempat! Pantai, gunung, atau bahkan ke luar negeri. Yang penting bareng kamu, kemana aja pasti seru! 🌍
+                    </p>
+                </div>
+
+                <div class="dream-card" data-testid="dream-card-3" onclick="showDreamMessage(3)">
+                    <div class="dream-icon">💍</div>
+                    <h3>Menikah</h3>
+                    <p class="dream-message" id="message-3">
+                        Someday, aku bakal lamar kamu dengan cara yang paling spesial. Dan kita bakal jadi pasangan suami istri yang paling bahagia di dunia! 💍
+                    </p>
+                </div>
+
+                <div class="dream-card" data-testid="dream-card-4" onclick="showDreamMessage(4)">
+                    <div class="dream-icon">👶</div>
+                    <h3>Punya Keluarga Kecil</h3>
+                    <p class="dream-message" id="message-4">
+                        Nanti kita bikin keluarga kecil yang bahagia. Kamu jadi ibu yang hebat, dan aku jadi ayah yang bertanggung jawab. Pasti seru! 👨‍👩‍👧‍👦
+                    </p>
+                </div>
+
+                <div class="dream-card" data-testid="dream-card-5" onclick="showDreamMessage(5)">
+                    <div class="dream-icon">🎯</div>
+                    <h3>Meraih Mimpi Bareng</h3>
+                    <p class="dream-message" id="message-5">
+                        Apapun mimpi kamu, aku bakal dukung 100%! Kita bakal wujudin semua mimpi kita bareng-bareng. You got this, sayang! 💪
+                    </p>
+                </div>
+
+                <div class="dream-card" data-testid="dream-card-6" onclick="showDreamMessage(6)">
+                    <div class="dream-icon">💙</div>
+                    <h3>Bahagia Selamanya</h3>
+                    <p class="dream-message" id="message-6">
+                        Yang paling penting dari semua impian kita adalah: kita bahagia. Selalu tertawa, saling support, dan cinta sampai tua nanti. Forever & always! 💙
+                    </p>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn-secondary" data-testid="back-button" onclick="goToPage('letter.html')">
+                    ← Kembali
+                </button>
+                <button class="btn-primary" data-testid="next-button" onclick="goToPage('fun.html')">
+                    Lanjut →
+                </button>
+            </div>
+
+            <div class="music-control" data-testid="music-control">
+                <button id="musicToggle" class="music-btn" onclick="toggleMusic()">
+                    🔊
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="../assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/dreams.js"></script>
+</body>
+</html>

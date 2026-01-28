@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu 💙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container closing-page" data-testid="closing-page">
+        <div class="content fade-in">
+            <div class="page-header">
+                <h1 data-testid="closing-title">Janji & Doa 💙</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="closing-card slide-up">
+                <div class="closing-section">
+                    <h3>🤝 Janji Aku Buat Kamu</h3>
+                    <ul class="promise-list">
+                        <li>Aku janji bakal selalu ada buat kamu, di saat senang maupun susah</li>
+                        <li>Aku janji bakal jaga kamu sebaik mungkin</li>
+                        <li>Aku janji bakal dengerin semua cerita kamu, apapun itu</li>
+                        <li>Aku janji bakal terus berusaha jadi yang terbaik buat kamu</li>
+                        <li>Aku janji bakal sayang kamu sampai kapanpun</li>
+                    </ul>
+                </div>
+
+                <div class="closing-section">
+                    <h3>🙏 Doa Aku Buat Kamu</h3>
+                    <div class="prayer-text">
+                        <p>Ya Allah, di hari spesial ini, aku berdoa untuk Lixie...</p>
+                        <p>Semoga dia selalu diberi kesehatan, kebahagiaan, dan keberkahan dalam setiap langkahnya.</p>
+                        <p>Semoga segala mimpi dan cita-citanya bisa terwujud.</p>
+                        <p>Semoga dia selalu dilindungi dari segala hal buruk.</p>
+                        <p>Semoga hubungan kita diberkahi dan dipermudah sampai ke pelaminan nanti.</p>
+                        <p>Dan semoga kita bisa terus bareng sampai tua, bahagia dunia akhirat. Aamiin! 💙</p>
+                    </div>
+                </div>
+
+                <div class="final-message">
+                    <h2>Happy Birthday, Lixie! 🎉</h2>
+                    <p class="big-text">Semoga umur yang baru ini membawa lebih banyak kebahagiaan!</p>
+                    <p>Makasih udah jadi bagian terpenting dalam hidup aku. I love you so much! 💙</p>
+                    <div class="signature">
+                        <p>With all my love,</p>
+                        <p class="signature-name">Ryzen 💙</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn-secondary" data-testid="back-button" onclick="goToPage('fun.html')">
+                    ← Kembali
+                </button>
+                <button class="btn-primary" data-testid="restart-button" onclick="goToPage('../index.html')">
+                    Mulai Lagi 🔄
+                </button>
+            </div>
+
+            <div class="music-control" data-testid="music-control">
+                <button id="musicToggle" class="music-btn" onclick="toggleMusic()">
+                    🔊
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="../assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

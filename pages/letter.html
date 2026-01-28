@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat Buat Kamu 💙</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container letter-page" data-testid="letter-page">
+        <div class="content fade-in">
+            <div class="page-header">
+                <h1 data-testid="letter-title">Surat Buat Kamu 💙</h1>
+                <div class="divider"></div>
+            </div>
+
+            <div class="letter-card slide-up" data-testid="letter-content">
+                <div class="letter-header">
+                    <p>Untuk: Lixie yang paling spesial 💙</p>
+                    <p class="letter-date">Dari: Ryzen</p>
+                </div>
+
+                <div class="letter-body">
+                    <p>Hai sayang,</p>
+                    
+                    <p>Gapapa kan aku panggil sayang? Hehe. Jujur, aku gatau harus mulai dari mana. Kata-kata rasanya kurang buat jelasin gimana perasaan aku ke kamu.</p>
+                    
+                    <p>Kamu tau ga? Setiap hari sama kamu tuh bikin aku bersyukur. Bersyukur karena udah ketemu sama orang yang bener-bener ngerti aku, yang sabar ngadepin aku pas lagi rewel, yang selalu ada bahkan pas aku lagi di titik terendah.</p>
+                    
+                    <p>Aku inget banget pas pertama kali kita ngobrol di Facebook. Siapa sangka dari nama aneh aku (wkwk), kita bisa sampe sejauh ini? Dari yang awalnya cuma chat-chat biasa, sampe akhirnya kamu bilang gamau di-HTS. Dan sekarang? Kita udah beneran jadian! 💙</p>
+                    
+                    <p>Yang paling berkesan buat aku adalah saat pertama kali aku dateng ke rumah kamu. Grogi? Jelas banget! Tapi mamah sama papah kamu bener-bener bikin aku nyaman. Rasanya kayak udah diterima sama keluarga besar kamu, dan itu bikin aku makin yakin sama hubungan kita.</p>
+                    
+                    <p>Iya, kita emang ngelaluin banyak ujian dan cobaan. Ada masa-masa yang berat, ada saat dimana kita harus saling kuat-kuatin. Tapi justru dari situlah aku makin yakin, kamu adalah orangnya. Orang yang worth it untuk diperjuangin, untuk dipertahanin sampai kapanpun.</p>
+                    
+                    <p>Di hari ulang tahun kamu yang spesial ini, aku cuma mau bilang: makasih udah jadi kamu. Makasih udah mau nerima aku apa adanya. Makasih udah bikin hidup aku lebih berwarna. Dan yang paling penting, makasih udah mau sama aku.</p>
+                    
+                    <p>Semoga di umur yang baru ini, kamu selalu diberkahi kesehatan, kebahagiaan, dan segala hal baik lainnya. Aku bakal terus ada buat kamu, di saat senang maupun susah. Kita bakal lewatin semuanya bareng-bareng, ya!</p>
+                    
+                    <p>Happy birthday, sayang! Semoga kita bisa terus bareng sampai tua nanti. Aku sayang kamu bukan cuma hari ini, tapi setiap hari. Selamanya. 💙</p>
+                    
+                    <p class="letter-closing">Dengan cinta,<br>Ryzen 💙</p>
+                </div>
+            </div>
+
+            <div class="navigation-buttons">
+                <button class="btn-secondary" data-testid="back-button" onclick="goToPage('story.html')">
+                    ← Kembali
+                </button>
+                <button class="btn-primary" data-testid="next-button" onclick="goToPage('future.html')">
+                    Lanjut →
+                </button>
+            </div>
+
+            <div class="music-control" data-testid="music-control">
+                <button id="musicToggle" class="music-btn" onclick="toggleMusic()">
+                    🔊
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="../assets/audio/background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
